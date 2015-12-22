@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Geolocation</title>
+	<link rel="stylesheet" href="css/style.css" />
+   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <section class="body-text">
+        <h1>Are you lost?</h1>
+        <button onclick="getLocation()">Find out where you are!</button>
+        <h2 id="location"></h2>
+    </section>
+<script>
+var x = document.getElementById("location");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;	
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+html, body{
+	background: url('../img/bkgd.jpg') top no-repeat;
+	background-size: cover;
+	font-size: 16px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+img{
+	width: 100%;
+	margin: auto;
+}
+.body-text{
+	max-width: 95%;
+	margin: auto;
+}
+h1{
+	font-size: 2.5em;
+	text-transform: uppercase;
+	padding-top: 5%;
+}
+#location{
+	font-size: 1.5em;
+}
+button{
+	background: none;
+	border: 1px solid;
+	border-radius: 5px;
+	font-size: 1.5em;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	padding: 10px;
+	color: tomato;
+}
+
+@media (min-width:768px) {
+h1{
+	font-size: 3em;
+}
+#location{
+	font-size: 2em;
+}
+button{
+	font-size: 2em;
+}
+}
+ 
+@media (min-width:940px) {
+	
+}
